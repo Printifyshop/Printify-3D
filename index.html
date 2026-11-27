@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printify 3D - Van idee naar 3D</title>
+    <meta name="description" content="Printify 3D - Van idee naar 3D. Unieke 3D-geprinte fidget toys, handige gadgets en maatwerk. Gratis bezorging in gemeente Velsen!">
+    <meta property="og:title" content="Printify 3D - Van idee naar 3D">
+    <meta property="og:description" content="Ontdek unieke 3D-geprinte fidgets, gadgets en accessoires.">
+    <meta property="og:image" content="fotos/web-fotos/logo.png">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="fotos/web-fotos/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigatiemenu -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Printify <span>3D</span></div>
+            
+            <div class="nav-actions-inline">
+                <a href="#cartModal" id="cartBtn" class="cart-nav-link">🛒 Winkelwagen (<span id="cartCount">0</span>)</a>
+                <a href="#" class="page-link active" data-page="shop-page">🛍️ Webshop</a>
+                <a href="#" class="page-link" data-page="plaza-page">🎉 Printify Plaza</a>
+                <a href="#" class="page-link" data-page="info-page">ℹ️ Info & Over ons</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#cartModal" class="cart-nav-link mobile-cart-link">🛒 Winkelwagen (<span id="cartCountMobile">0</span>)</a></li>
+                <li><a href="#" class="page-link mobile-link active" data-page="shop-page">🛍️ Webshop / Home</a></li>
+                <li><a href="#" class="page-link mobile-link" data-page="plaza-page">🎉 Printify Plaza</a></li>
+                <li><a href="#" class="page-link mobile-link" data-page="info-page">ℹ️ Info, Over ons & Hoe het werkt</a></li>
+                <li><a href="#producten" class="menu-scroll-link" data-target="producten">📦 Producten bekijken</a></li>
+                <li><a href="#contact" class="menu-scroll-link" data-target="contact">✉️ Contact & Review achterlaten</a></li>
+                <li><a href="https://whatsapp.com/channel/0029Vb8Zgy572WTtWEpmfi2r" target="_blank">📢 WhatsApp-kanaal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- DIA 1: HOOFDPAGINA -->
+    <main id="shop-page" class="page-section active">
+        <!-- Hero / Welkomstsectie -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">3D-Print Studio</span>
+                    <h1>Printify <span>3D</span></h1>
+                    <p class="tagline">Van idee naar 3D</p>
+                    <p class="hero-intro">
+                        Welkom bij Printify 3D! Wij ontwerpen en printen eigenzinnige en praktische producten met onze 3D-printers. Ontdek ons assortiment hieronder.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#producten" class="btn btn-primary menu-scroll-link" data-target="producten">Bekijk onze producten</a>
+                        <button class="btn btn-outline nav-to-info-btn">ℹ️ Lees hoe het werkt</button>
+                        <a href="https://whatsapp.com/channel/0029Vb8Zgy572WTtWEpmfi2r" target="_blank" class="btn btn-whatsapp">📢 WhatsApp-kanaal</a>
+                        <button class="btn btn-plaza nav-to-plaza-btn" type="button">🎉 Printify Plaza</button>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <img src="fotos/web-fotos/logo.png" alt="Printify 3D Logo" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Onze Producten -->
+        <section id="producten" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-badge">Portfolio</span>
+                    <h2 class="section-title">Onze producten</h2>
+                    <p class="section-subtitle">Klik op het product voor alle details, foto's en opties.</p>
+                </div>
+
+                <!-- Zoekbalk & Categorie Filters -->
+                <div class="search-filter-wrapper">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="🔍 Zoek naar een product...">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Alles</button>
+                        <button class="filter-btn" data-filter="fidget">Fidgets</button>
+                        <button class="filter-btn" data-filter="gadget">Gadgets</button>
+                        <button class="filter-btn" data-filter="overig">Overig</button>
+                    </div>
+                </div>
+                
+                <!-- CATEGORIE 1: FIDGETS -->
+                <div class="category-section" data-category-group="fidget">
+                    <div class="category-header-title">
+                        <h3>🎮 Fidgets</h3>
+                    </div>
+                    <div class="product-grid">
+                        
+                        <!-- Donut fidget -->
+                        <div class="product-card" data-name="Donut fidget" data-price="2.50" data-category="fidget" data-img="fotos/web-fotos/donut-fidget.jpg" data-desc="Leuke donut-vormige fidget toy om mee te spelen.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/donut-fidget.jpg" alt="Donut fidget">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Donut fidget</h3>
+                                <span class="product-price">€ 2,50</span>
+                                <p>Leuke donut-vormige fidget toy.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fidget bal -->
+                        <div class="product-card" data-name="Fidget bal" data-price="2.50" data-category="fidget" data-img="fotos/web-fotos/fidget-bal.jpg" data-desc="Draaibare en flexibel beweegbare bal.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/fidget-bal.jpg" alt="Fidget bal">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Fidget bal</h3>
+                                <span class="product-price">€ 2,50</span>
+                                <p>Draaibare en beweegbare bal.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fidget spinner -->
+                        <div class="product-card" data-name="Fidget spinner" data-price="2.00" data-category="fidget" data-img="fotos/web-fotos/fidget-spinner.jpg" data-desc="Klassieke en extreem soepel draaiende spinner.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/fidget-spinner.jpg" alt="Fidget spinner">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Fidget spinner</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Soepel draaiende spinner.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gyro ring -->
+                        <div class="product-card" data-name="Gyro ring" data-price="1.50" data-category="fidget" data-img="fotos/web-fotos/gyro-ring.jpg" data-desc="Roterende in elkaar draaiende gyroscoop ringen.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/gyro-ring.jpg" alt="Gyro ring">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Gyro ring</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Roterende in elkaar draaiende ring.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hexagon fidget -->
+                        <div class="product-card" data-name="Hexagon fidget" data-price="2.00" data-category="fidget" data-img="fotos/web-fotos/hexagon-fidget.jpg" data-desc="Zeskantige fidget toy met unieke draaibeweging.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/hexagon-fidget.jpg" alt="Hexagon fidget">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Hexagon fidget</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Zeskantige fidget toy.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Infinity cube -->
+                        <div class="product-card" data-name="Infinity cube" data-price="2.00" data-category="fidget" data-img="fotos/web-fotos/infinity-cube.jpg, fotos/web-fotos/infinity-cube-2.jpg" data-desc="Eindeloos opvouwbare kubus voor ontspanning.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/infinity-cube.jpg" alt="Infinity cube">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Infinity cube</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Eindeloos opvouwbare kubus.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Joy fidget -->
+                        <div class="product-card" data-name="Joy fidget" data-price="1.50" data-category="fidget" data-img="fotos/web-fotos/joy-fidget.jpg" data-desc="Vrolijke en fijne fidget toy.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/joy-fidget.jpg" alt="Joy fidget">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Joy fidget</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Vrolijke fidget toy.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Klik fidget -->
+                        <div class="product-card" data-name="Klik fidget" data-price="2.00" data-category="fidget" data-img="fotos/web-fotos/klik-fidget.jpg" data-desc="Fidget met een fijne en bevredigende klik.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/klik-fidget.jpg" alt="Klik fidget">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Klik fidget</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Fidget met bevredigende klik.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Multi fidget -->
+                        <div class="product-card" data-name="Multi fidget" data-price="3.00" data-category="fidget" data-img="fotos/web-fotos/multi-fidget.jpg" data-desc="Veelzijdige fidget met meerdere functies.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/multi-fidget.jpg" alt="Multi fidget">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Multi fidget</h3>
+                                <span class="product-price">€ 3,00</span>
+                                <p>Veelzijdige fidget toy.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rol fidget -->
+                        <div class="product-card" data-name="Rol fidget" data-price="2.00" data-category="fidget" data-img="fotos/web-fotos/rol-fidget.jpg" data-video="fotos/web-fotos/rol-fidget.mp4" data-desc="Soepel en rustgevend rollend speelgoed. Inclusief video!">
+                            <div class="product-card-thumb-container">
+                                <button class="card-video-btn" type="button" data-video-target="Rol fidget" title="Bekijk video direct">
+                                    <span class="play-icon">▶</span> Bekijk video
+                                </button>
+                                <img src="fotos/web-fotos/rol-fidget.jpg" alt="Rol fidget">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Rol fidget</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Soepel rollend speelgoed.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Schakel fidget -->
+                        <div class="product-card" data-name="Schakel fidget" data-price="1.50" data-category="fidget" data-img="fotos/web-fotos/schakel-fidget.jpg, fotos/web-fotos/schakel-fidget-2.jpg, fotos/web-fotos/schakel-fidget-3.jpg" data-desc="Soepel schakelende en rustgevende fidget toy.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/schakel-fidget.jpg" alt="Schakel fidget">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Schakel fidget</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Soepel schakelende fidget toy.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spiraal fidget -->
+                        <div class="product-card" id="spiraalCard" data-is-spiraal="true" data-name="Spiraal fidget (Groot)" data-price="2.50" data-category="fidget" data-img="fotos/web-fotos/spiraal-fidget-groot.jpg" data-desc="Optische spiraal fidget met tof effect. Beschikbaar in Groot (€ 2,50), Middel (€ 1,50) en Klein (€ 0,50).">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/spiraal-fidget-groot.jpg" alt="Spiraal fidget">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Spiraal fidget</h3>
+                                <span class="product-price" id="spiraalPriceDisplay">€ 2,50</span>
+                                <p>Optische spiraal fidget met tof effect.</p>
+                                
+                                <div style="margin-bottom: 0.5rem;" class="stop-modal-propagation">
+                                    <label for="spiraalMaatSelect" class="form-label-sm">Kies de maat:</label>
+                                    <select id="spiraalMaatSelect" class="select-inline">
+                                        <option value="Groot">Groot (€ 2,50)</option>
+                                        <option value="Middel">Middel (€ 1,50)</option>
+                                        <option value="Klein">Klein (€ 0,50)</option>
+                                    </select>
+                                </div>
+
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Switch -->
+                        <div class="product-card" data-name="Switch" data-price="0.50" data-category="fidget" data-img="fotos/web-fotos/switch.jpg" data-desc="Compacte schakelaar fidget toy.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/switch.jpg" alt="Switch">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Switch</h3>
+                                <span class="product-price">€ 0,50</span>
+                                <p>Schakelaar fidget toy.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tandwiel fidget -->
+                        <div class="product-card" data-name="Tandwiel fidget" data-price="1.50" data-category="fidget" data-img="fotos/web-fotos/tandwiel-fidget.jpg" data-desc="Soepel in elkaar grijpende draaiende tandwielen.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/tandwiel-fidget.jpg" alt="Tandwiel fidget">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Fidget</span>
+                                <h3>Tandwiel fidget</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Draaiende tandwielen.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CATEGORIE 2: GADGETS -->
+                <div class="category-section" data-category-group="gadget">
+                    <div class="category-header-title">
+                        <h3>🛠️ Gadgets</h3>
+                    </div>
+                    <div class="product-grid">
+
+                        <!-- Alles houder -->
+                        <div class="product-card" data-name="Alles houder" data-price="1.50" data-category="gadget" data-img="fotos/web-fotos/alles-houder.jpg, fotos/web-fotos/alles-houder-2.jpg" data-desc="Handige universele houder voor verschillende spullen op je bureau.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/alles-houder.jpg" alt="Alles houder">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Alles houder</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Handige universele houder.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blik opener -->
+                        <div class="product-card" data-name="Blik opener" data-price="1.00" data-category="gadget" data-img="fotos/web-fotos/blik-opener.jpg, fotos/web-fotos/blik-opener-2.jpg" data-desc="Handig hulpmiddel om blikjes moeiteloos te openen.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/blik-opener.jpg" alt="Blik opener">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Blik opener</h3>
+                                <span class="product-price">€ 1,00</span>
+                                <p>Handig hulpmiddel voor blikjes.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Haarborstel schoonmaker -->
+                        <div class="product-card" data-name="Haarborstel schoonmaker" data-price="1.50" data-category="gadget" data-img="fotos/web-fotos/haarborstel-schoonmaker.jpg, fotos/web-fotos/haarborstel-schoonmaker-2.jpg" data-desc="Handig tooltje om haren uit borstels te verwijderen.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/haarborstel-schoonmaker.jpg" alt="Haarborstel schoonmaker">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Haarborstel schoonmaker</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Handig reinigingstooltje.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kaartendoos -->
+                        <div class="product-card" data-name="Kaartendoos" data-price="2.50" data-category="gadget" data-img="fotos/web-fotos/kaartendoos.jpg, fotos/web-fotos/kaartendoos-2.jpg" data-desc="Stevige beschermdoos voor je speelkaarten.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/kaartendoos.jpg" alt="Kaartendoos">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Kaartendoos</h3>
+                                <span class="product-price">€ 2,50</span>
+                                <p>Stevige beschermdoos voor kaarten.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kaartenhouder -->
+                        <div class="product-card" data-name="Kaartenhouder" data-price="2.50" data-category="gadget" data-img="fotos/web-fotos/kaartenhouder.jpg, fotos/web-fotos/kaartenhouder-2.jpg" data-desc="Handige standaard voor het vasthouden van speelkaarten.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/kaartenhouder.jpg" alt="Kaartenhouder">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Kaartenhouder</h3>
+                                <span class="product-price">€ 2,50</span>
+                                <p>Standaard voor speelkaarten.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kabel houder -->
+                        <div class="product-card" data-name="Kabel houder" data-price="0.50" data-category="gadget" data-img="fotos/web-fotos/kabel-houder.jpg, fotos/web-fotos/kabel-houder-2.jpg" data-desc="Compact klemmetje om kabels netjes vast te zetten.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/kabel-houder.jpg" alt="Kabel houder">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Kabel houder</h3>
+                                <span class="product-price">€ 0,50</span>
+                                <p>Houd kabels netjes op hun plek.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kabel organizer -->
+                        <div class="product-card" data-name="Kabel organizer" data-price="2.50" data-category="gadget" data-img="fotos/web-fotos/kabel-organizer.jpg, fotos/web-fotos/kabel-organizer-2.jpg, fotos/web-fotos/kabel-organizer-3.jpg" data-desc="Voorkom kabel-in-de-knoop situaties op je bureau.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/kabel-organizer.jpg" alt="Kabel organizer">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Kabel organizer</h3>
+                                <span class="product-price">€ 2,50</span>
+                                <p>Geen losse kabels meer op je bureau.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mand -->
+                        <div class="product-card" data-name="Mand" data-price="2.50" data-category="gadget" data-img="fotos/web-fotos/mand.jpg, fotos/web-fotos/mand-2.jpg" data-desc="Handig opbergmandje voor kleine spullen op je bureau.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/mand.jpg" alt="Mand">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Mand</h3>
+                                <span class="product-price">€ 2,50</span>
+                                <p>Opbergmandje voor kleine spullen.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Opladende telefoonhouder -->
+                        <div class="product-card" data-name="Opladende telefoonhouder" data-price="2.00" data-category="gadget" data-img="fotos/web-fotos/opladende-telefoonhouder.jpg, fotos/web-fotos/opladende-telefoonhouder-2.jpg" data-desc="Stevige standaard voor je telefoon terwijl die oplaadt.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/opladende-telefoonhouder.jpg" alt="Opladende telefoonhouder">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Opladende telefoonhouder</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Telefoonhouder tijdens opladen.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pennenbak -->
+                        <div class="product-card" data-name="Pennenbak" data-price="2.00" data-category="gadget" data-img="fotos/web-fotos/pennenbak.jpg, fotos/web-fotos/pennenbak-2.jpg" data-desc="Stijlvolle 3D-geprinte pennenbak voor stiften en pennen.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/pennenbak.jpg" alt="Pennenbak">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Pennenbak</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Stijlvolle pennenbak.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tandpasta squeezer -->
+                        <div class="product-card" data-name="Tandpasta squeezer" data-price="1.00" data-category="gadget" data-img="fotos/web-fotos/tandpasta-squeezer.jpg, fotos/web-fotos/tandpasta-squeezer-2.jpg" data-desc="Haal gemakkelijk het laatste beetje tandpasta uit de tube.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/tandpasta-squeezer.jpg" alt="Tandpasta squeezer">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Tandpasta squeezer</h3>
+                                <span class="product-price">€ 1,00</span>
+                                <p>Haal alles uit de tube.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Telefoonhouder -->
+                        <div class="product-card" data-name="Telefoonhouder" data-price="1.50" data-category="gadget" data-img="fotos/web-fotos/telefoonhouder.jpg, fotos/web-fotos/telefoonhouder-2.jpg" data-desc="Compacte en stevige bureaustandaard voor smartphones.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/telefoonhouder.jpg" alt="Telefoonhouder">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Telefoonhouder</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Compacte standaard voor smartphone.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vingerstokjes -->
+                        <div class="product-card" data-name="Vingerstokjes" data-price="1.50" data-category="gadget" data-img="fotos/web-fotos/vingerstokjes.jpg, fotos/web-fotos/vingerstokjes-2.jpg" data-desc="Eet snacks zonder vuile vingers te krijgen tijdens het gamen.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/vingerstokjes.jpg" alt="Vingerstokjes">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Vingerstokjes</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Handige eetstokjes voor aan je vingers.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Zak klip -->
+                        <div class="product-card" data-name="Zak klip" data-price="0.50" data-category="gadget" data-img="fotos/web-fotos/zak-klip.jpg, fotos/web-fotos/zak-klip-2.jpg" data-video="fotos/web-fotos/zak-klip.mp4" data-desc="Sluit geopende chipszakken luchtdicht af. Inclusief foto's en video!">
+                            <div class="product-card-thumb-container">
+                                <button class="card-video-btn" type="button" data-video-target="Zak klip" title="Bekijk video direct">
+                                    <span class="play-icon">▶</span> Bekijk video
+                                </button>
+                                <img src="fotos/web-fotos/zak-klip.jpg" alt="Zak klip">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Gadget</span>
+                                <h3>Zak klip</h3>
+                                <span class="product-price">€ 0,50</span>
+                                <p>Sluit geopende zakken luchtdicht af.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CATEGORIE 3: OVERIG -->
+                <div class="category-section" data-category-group="overig">
+                    <div class="category-header-title">
+                        <h3>🌟 Overig</h3>
+                    </div>
+                    <div class="product-grid">
+
+                        <!-- Boot -->
+                        <div class="product-card" data-name="Boot" data-price="1.50" data-category="overig" data-img="fotos/web-fotos/boot.jpg" data-desc="Gedetailleerd en strak 3D-geprint bootmodel.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/boot.jpg" alt="Boot">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Overig</span>
+                                <h3>Boot</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Gedetailleerd 3D-geprint model.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dino sleutelhanger -->
+                        <div class="product-card" data-name="Dino sleutelhanger" data-price="1.50" data-category="overig" data-img="fotos/web-fotos/dino-sleutelhanger.jpg" data-desc="Toffe 3D-geprinte dino sleutelhanger.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/dino-sleutelhanger.jpg" alt="Dino sleutelhanger">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Overig</span>
+                                <h3>Dino sleutelhanger</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Toffe dino sleutelhanger.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flexi draak -->
+                        <div class="product-card" data-name="Flexi draak" data-price="2.50" data-category="overig" data-img="fotos/web-fotos/flexi-draak.jpg" data-desc="Flexibele en volledig beweegbare 3D-draak.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/flexi-draak.jpg" alt="Flexi draak">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Overig</span>
+                                <h3>Flexi draak</h3>
+                                <span class="product-price">€ 2,50</span>
+                                <p>Flexibele draak met beweging.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flexi mat -->
+                        <div class="product-card" data-name="Flexi mat" data-price="2.00" data-category="overig" data-img="fotos/web-fotos/flexi-mat.jpg" data-desc="Fijne soepele mat met flexibele schakels.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/flexi-mat.jpg" alt="Flexi mat">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Overig</span>
+                                <h3>Flexi mat</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Soepele flexibele mat.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flexi octopus -->
+                        <div class="product-card" data-name="Flexi octopus" data-price="2.00" data-category="overig" data-img="fotos/web-fotos/flexi-octopus.jpg" data-desc="Inktvis met los beweegbare tentakels.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/flexi-octopus.jpg" alt="Flexi octopus">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Overig</span>
+                                <h3>Flexi octopus</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Octopus met beweegbare tentakels.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flexi slang -->
+                        <div class="product-card" data-name="Flexi slang" data-price="2.00" data-category="overig" data-img="fotos/web-fotos/flexi-slang.jpg" data-desc="Lange buigzame slang die soepel kronkelt.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/flexi-slang.jpg" alt="Flexi slang">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Overig</span>
+                                <h3>Flexi slang</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Buigzame slang.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flexi sleutelhanger -->
+                        <div class="product-card" data-name="Flexi sleutelhanger" data-price="1.50" data-category="overig" data-img="fotos/web-fotos/flexi-sleutelhanger.jpg" data-desc="Flexibele beweegbare sleutelhanger.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/flexi-sleutelhanger.jpg" alt="Flexi sleutelhanger">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Overig</span>
+                                <h3>Flexi sleutelhanger</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Flexibele beweegbare sleutelhanger.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Haai sleutelhanger -->
+                        <div class="product-card" data-name="Haai sleutelhanger" data-price="1.50" data-category="overig" data-img="fotos/web-fotos/haai-sleutelhanger.jpg" data-desc="Stoere 3D-geprinte haai sleutelhanger.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/haai-sleutelhanger.jpg" alt="Haai sleutelhanger">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Overig</span>
+                                <h3>Haai sleutelhanger</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Stoere haai sleutelhanger.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Infinity cube 2.0 -->
+                        <div class="product-card" data-name="Infinity cube 2.0" data-price="1.50" data-category="overig" data-img="fotos/web-fotos/infinity-cube-2.0.jpg" data-desc="Vernieuwde versie van de populaire infinity cube.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/infinity-cube-2.0.jpg" alt="Infinity cube 2.0">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Overig</span>
+                                <h3>Infinity cube 2.0</h3>
+                                <span class="product-price">€ 1,50</span>
+                                <p>Vernieuwde infinity cube.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stretchy poes -->
+                        <div class="product-card" data-name="Stretchy poes" data-price="2.00" data-category="overig" data-img="fotos/web-fotos/stretchy-poes.jpg" data-desc="Schattige en flexibel uitrekbare kat.">
+                            <div class="product-card-thumb-container">
+                                <img src="fotos/web-fotos/stretchy-poes.jpg" alt="Stretchy poes">
+                            </div>
+                            <div class="product-info">
+                                <span class="category-tag">Overig</span>
+                                <h3>Stretchy poes</h3>
+                                <span class="product-price">€ 2,00</span>
+                                <p>Schattige uitrekbare kat.</p>
+                                <div class="product-action-btns">
+                                    <button class="btn btn-cart add-to-cart-btn">🛒 In winkelwagen</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Eigen ontwerp: brede kaart onderaan Overig -->
+                        <div class="product-card custom-design-card" data-name="Eigen ontwerp (3D-print)" data-price="0.00" data-category="overig" data-desc="Eigen ontwerp 3D-print printables makerworld creality cloud eigen print link kleur">
+                            <div class="custom-design-heading"><span class="category-tag">Eigen ontwerp</span><h3>Wil jij je eigen ontwerp laten printen?</h3><p>Stuur de link van je 3D-ontwerp. Wij bekijken het bestand en bepalen de prijs aan de hand van het printgewicht.</p></div>
+                            <div class="custom-print-form">
+                                <div class="custom-print-link-field"><label for="customDesignUrl">Link naar het ontwerp</label><input id="customDesignUrl" type="url" placeholder="Plak hier je Printables-, MakerWorld- of Creality Cloud-link" autocomplete="url" required><small>Gebruik een openbare https-link zodat we het ontwerp kunnen bekijken.</small></div>
+                                <div class="custom-print-color-field"><label for="customPrintColor">Kies een kleur</label><select id="customPrintColor" class="select-modal">
+                                    <option value="Maakt niet uit (wij kiezen de best passende)">🎲 Maakt niet uit (wij kiezen de best passende)</option>
+                                    <option value="Zwart">⚫ Zwart</option><option value="Wit">⚪ Wit</option><option value="Rood">🔴 Rood</option><option value="Blauw">🔵 Blauw</option>
+                                    <option value="Groen">🟢 Groen</option><option value="Geel">🟡 Geel</option><option value="Oranje">🟠 Oranje</option><option value="Grijs">🔘 Grijs</option>
+                                    <option value="Anders">💬 Anders (zelf invullen...)</option>
+                                </select><input type="text" id="customPrintColorOther" placeholder="Welke kleur wil je?" hidden></div>
+                                <button id="addCustomPrintBtn" class="btn btn-cart" type="button">🛒 Voeg toe aan winkelmand</button>
+                            </div>
+                            <div class="custom-print-pricing"><strong>Prijs op basis van printgewicht · maximaal 100 gram</strong><p>1–10 g: € 1 · 10–20 g: € 2 · 20–40 g: € 3 · 40–70 g: € 4 · 70–100 g: € 5</p><small>Je hoeft het gewicht niet zelf in te vullen. Wij wegen het ontwerp en bevestigen de prijs met je.</small><small id="customPrintStatus" role="status" aria-live="polite"></small></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT & REVIEWS SECTIE -->
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-badge">Vragen of Delen</span>
+                    <h2 class="section-title">Contact & Reviews</h2>
+                    <p class="section-subtitle">Bekijk ervaringen van klanten of laat zelf een beoordeling achter.</p>
+                </div>
+
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <p><strong>E-mail:</strong> <a href="mailto:printify3dbedrijf@gmail.com">printify3dbedrijf@gmail.com</a></p>
+                    </div>
+
+                    <!-- RECENTE REVIEWS -->
+                    <div class="reviews-wrapper">
+                        <h3>Laatste beoordelingen</h3>
+                        <div id="recentReviewsContainer" class="reviews-list">
+                            <p class="no-reviews">Reviews laden…</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <button id="openReviewsModalBtn" class="btn btn-outline full-width-btn">⭐ Bekijk alle klantbeoordelingen</button>
+                    </div>
+
+                    <!-- Review Formulier -->
+                    <div class="review-form-container">
+                        <h3>Plaats een review</h3>
+                        <p>Je review verschijnt meteen op de website.</p>
+                        <form id="reviewForm">
+                            <div class="form-group">
+                                <label for="reviewName">Jouw naam:</label>
+                                <input type="text" id="reviewName" placeholder="Bijv. David" maxlength="80" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reviewStars">Aantal sterren:</label>
+                                <select id="reviewStars" class="review-select">
+                                    <option value="5">⭐⭐⭐⭐⭐ (5/5 - Uitstekend)</option>
+                                    <option value="4">⭐⭐⭐⭐ (4/5 - Zeer goed)</option>
+                                    <option value="3">⭐⭐⭐ (3/5 - Voldoende)</option>
+                                    <option value="2">⭐⭐ (2/5 - Kan beter)</option>
+                                    <option value="1">⭐ (1/5 - Onvoldoende)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="reviewText">Jouw review:</label>
+                                <textarea id="reviewText" rows="3" maxlength="1000" placeholder="Wat is je ervaring met onze producten?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width-btn">Verstuur review</button>
+                        </form>
+                        <p id="reviewSubmissionStatus" role="status" aria-live="polite"></p>
+                    </div>
+
+                    <div class="social-buttons">
+                        <a href="https://whatsapp.com/channel/0029Vb8Zgy572WTtWEpmfi2r" target="_blank" class="btn btn-whatsapp">📢 Volg ons op WhatsApp</a>
+                        <a href="https://youtube.com/@printify3dbedrijf?si=XZxvZ5Mo8mADrnh6" target="_blank" class="btn btn-youtube">Bekijk ons YouTube-kanaal</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- DIA 2: PRINTIFY PLAZA -->
+    <main id="plaza-page" class="page-section">
+        <section class="section plaza-section">
+            <div class="container">
+                <button class="btn btn-outline back-to-shop-btn">← Terug naar de webshop</button>
+                <div class="section-header" style="margin-top:1.5rem">
+                    <span class="sub-badge">Spelen, ontdekken & leren</span>
+                    <h2 class="section-title">Printify Plaza</h2>
+                    <p class="section-subtitle">Test je 3D-kennis, verzamel punten en ontdek elke keer nieuwe weetjes.</p>
+                </div>
+                <div class="plaza-grid">
+                    <section class="plaza-card plaza-quiz-card" aria-labelledby="plazaQuizTitle">
+                        <div class="plaza-card-icon">🎯</div><p class="plaza-kicker">20 vragen per ronde</p><h3 id="plazaQuizTitle">De 3D-quiz</h3>
+                        <p class="plaza-intro">Hoeveel weet jij over ontwerpen, materialen en 3D-printen?</p>
+                        <div class="plaza-score-strip"><span id="plazaBestScore">🏆 Topscore: 0 / 20</span><span id="plazaRoundScore" hidden></span></div>
+                        <div id="plazaQuizWelcome" class="plaza-welcome"><p>Elke ronde krijgt een verse mix van vragen. Je ziet meteen of je antwoord goed is.</p><button id="plazaStartQuiz" class="btn btn-primary plaza-action" type="button">Start quiz</button></div>
+                        <div id="plazaQuizGame" hidden><div class="plaza-question-meta"><span id="plazaQuestionNumber">Vraag 1 van 20</span><span class="plaza-progress-track"><span id="plazaQuizProgress"></span></span></div><h4 id="plazaQuestion"></h4><div id="plazaOptions" class="plaza-options"></div><div class="plaza-question-actions"><button id="plazaTip" class="btn btn-outline" type="button">💡 Tip</button><button id="plazaNextQuestion" class="btn btn-primary plaza-action" type="button" hidden>Volgende vraag →</button></div><p id="plazaTipText" class="plaza-tip-text" hidden></p><p id="plazaFeedback" role="status" aria-live="polite"></p></div>
+                        <div id="plazaQuizResults" hidden><p class="plaza-results-score" id="plazaFinalScore"></p><p id="plazaResultMessage"></p><button id="plazaNewQuiz" class="btn btn-primary plaza-action" type="button">Start een nieuwe quiz</button></div>
+                    </section>
+                    <section class="plaza-card plaza-fact-card" aria-labelledby="plazaFactTitle">
+                        <div class="plaza-card-icon">✨</div><p class="plaza-kicker">Elke keer iets nieuws</p><h3 id="plazaFactTitle">Wist je dat?</h3>
+                        <p id="plazaFactText" class="plaza-fact-text" aria-live="polite"></p>
+                        <button id="plazaNextFact" class="btn btn-outline" type="button">Nog een weetje</button>
+                        <div class="plaza-bonus"><strong>💡 Plaza-tip</strong><p>Kom je een product tegen dat je nieuwsgierig maakt? Bekijk het in de webshop en ontdek waar het ontwerp voor dient.</p><a href="#producten" class="btn btn-cart menu-scroll-link" data-target="producten">Ontdek de producten</a></div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- DIA 3: INFORMATIE & OVER ONS PAGINA -->
+    <main id="info-page" class="page-section">
+        <section class="section info-hero-section">
+            <div class="container">
+                <button class="btn btn-outline back-to-shop-btn">← Terug naar de webshop</button>
+                <div class="section-header" style="margin-top: 1.5rem;">
+                    <span class="sub-badge">Informatie & Verhaal</span>
+                    <h2 class="section-title">Over Printify 3D & Hoe het werkt</h2>
+                    <p class="section-subtitle">Lees meer over ons team, het bestelproces en de 3D-printtechniek.</p>
+                </div>
+
+                <div class="about-card">
+                    <span class="badge">Wie zijn wij</span>
+                    <h3>Ons Verhaal</h3>
+                    <p>
+                        Wij zijn Printify 3D gestart vanuit onze passie voor technologie en ontwerpen. Nadat we verschillende ideeën hadden getest en merkten dat hier veel vraag naar was, zijn we vol enthousiasme doorgegaan.
+                    </p>
+                    <p>
+                        Met onze 3D-printers en kwalitatieve PLA-filament produceren we met zorg diverse unieke artikelen. Wat begon als een kleinschalig project is inmiddels uitgegroeid tot een professionele studio.
+                    </p>
+                    <div class="team-placeholder">
+                        <h3>Onze Toekomst</h3>
+                        <p>Ons doel is om in de toekomst door te groeien tot een volwaardig en gevestigd 3D-printbedrijf.</p>
+                    </div>
+                </div>
+
+                <div class="about-card border-accent">
+                    <span class="badge badge-accent">Bestel Info</span>
+                    <h3>Hoe werkt bestellen bij ons?</h3>
+                    <div class="info-steps-list">
+                        <div class="info-step-item">
+                            <div class="info-step-num">1</div>
+                            <div>
+                                <strong>Selecteer je producten:</strong>
+                                <p>Plaats je artikelen in de winkelwagen en vul je gegevens in.</p>
+                            </div>
+                        </div>
+                        <div class="info-step-item">
+                            <div class="info-step-num">2</div>
+                            <div>
+                                <strong>Verstuur je bestelling:</strong>
+                                <p>Kies in het overzicht of je de bestelling wilt opsturen via Gmail of je standaard e-mailprogramma.</p>
+                            </div>
+                        </div>
+                        <div class="info-step-item">
+                            <div class="info-step-num">3</div>
+                            <div>
+                                <strong>Bevestiging en productie:</strong>
+                                <p>Na ontvangst nemen we contact met je op voor de betaling, waarna we direct starten met printen.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shipping-info-box">
+                        <strong>📦 Verzendopties & Kosten:</strong>
+                        <p>
+                            Binnen de mooie <strong>gemeente Velsen</strong> bezorgen wij je bestelling helemaal gratis! Woon je daarbuiten in Nederland, dan bedragen de verzendkosten <strong>€ 4,00</strong>. Bestellingen van buiten Nederland kunnen we helaas niet aannemen.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <span class="badge">Veelgestelde Vragen</span>
+                    <h3>Veelgestelde vragen</h3>
+                    
+                    <div class="faq-list">
+                        <div>
+                            <strong>❓ Welk materiaal gebruiken jullie voor de prints?</strong>
+                            <p>Wij printen uitsluitend met hoogwaardig PLA-filament. Dit is een sterk en biologisch afbreekbaar kunststof op basis van maiszetmeel.</p>
+                        </div>
+                        <div>
+                            <strong>❓ Wat is de levertijd van een product?</strong>
+                            <p>Omdat elk item op bestelling wordt geprint, bedraagt de levertijd doorgaans 1 tot 3 werkdagen.</p>
+                        </div>
+                        <div>
+                            <strong>❓ Kan ik ook een eigen ontwerp aanleveren?</strong>
+                            <p>Zeker! Neem gerust contact met ons op via e-mail om de mogelijkheden voor maatwerk te bespreken.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <span class="sub-badge">Techniek</span>
+                    <h2 class="section-title">Hoe werkt 3D-printen?</h2>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <h3>Het 3D-ontwerp</h3>
+                        <p>Het proces start digitaal. Een 3D-model wordt voorbereid in gespecialiseerde software.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <h3>Voorbereiding (Slicing)</h3>
+                        <p>De computer verdeelt het object in honderden flinterdunne horizontale laagjes.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <h3>Laag voor laag opbouwen</h3>
+                        <p>De printer smelt het kunststof filament en brengt dit uiterst nauwkeurig laag voor laag aan.</p>
+                    </div>
+                </div>
+
+                <div class="text-center-wrapper">
+                    <button class="btn btn-primary back-to-shop-btn">🛍️ Ga terug naar de webshop</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL REVIEWS -->
+    <div id="reviewsModal" class="cart-modal">
+        <div class="cart-modal-content max-w-600">
+            <span class="close-modal" id="closeReviewsModal">&times;</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-right: 2.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                <h2 style="margin: 0;">⭐ Alle Klantbeoordelingen</h2>
+                <button id="adminReviewBtn" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.3rem 0.6rem; border-radius: 6px; cursor: pointer;">🔐 Beheer reviews</button>
+            </div>
+            <section id="reviewAdminPanel" hidden style="margin-bottom:1rem; padding:1rem; border:1px solid var(--border); border-radius:8px;">
+                <div id="reviewAdminControls">
+                    <p>Voer je privébeheercode in. Supabase controleert de code; deze staat niet in de websitebron.</p>
+                    <label for="reviewAdminCode" style="display:block; margin-top:.75rem;">Privébeheercode</label>
+                    <input id="reviewAdminCode" type="password" autocomplete="current-password" minlength="13" maxlength="64" placeholder="Beheercode" style="width:100%; padding:.65rem; margin:.35rem 0;">
+                    <button id="verifyReviewCodeBtn" type="button" class="btn btn-primary">Inloggen</button>
+                </div>
+                <button id="logoutReviewAdminBtn" type="button" class="btn btn-outline" style="display:none;">Uitloggen</button>
+                <p id="reviewAdminStatus" role="status" aria-live="polite"></p>
+                <div id="pendingReviewsList" class="reviews-modal-scroll"></div>
+            </section>
+            <div id="reviewsModalList" class="reviews-modal-scroll">
+                <p class="no-reviews">Reviews laden…</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAIL MODAL -->
+    <div id="productDetailModal" class="cart-modal">
+        <div class="cart-modal-content detail-modal-content">
+            <span class="close-modal" id="closeDetailModal">&times;</span>
+            <div class="detail-modal-body">
+                
+                <div class="detail-img-wrapper">
+                    <div class="detail-img-container" id="modalMediaContainer">
+                        <button class="slider-arrow prev-arrow" id="prevImgBtn">❮</button>
+                        <button class="slider-arrow next-arrow" id="nextImgBtn">❯</button>
+                    </div>
+
+                    <!-- FOTO / VIDEO KEUZE BALK (Alleen zichtbaar bij producten met video) -->
+                    <div id="modalMediaToggle" class="modal-media-toggle" style="display: none;">
+                        <button id="modalShowPhotosBtn" type="button" class="media-toggle-btn active">📷 Foto's bekijken</button>
+                        <button id="modalShowVideoBtn" type="button" class="media-toggle-btn">🎬 Bekijk video</button>
+                    </div>
+
+                    <p class="tip-text" id="modalTipText">💡 Tip: Klik op de foto om deze in het groot te bekijken!</p>
+                    <div class="detail-thumbnails" id="thumbsContainer"></div>
+                </div>
+
+                <div class="detail-info-container">
+                    <span id="modalCategoryTag" class="category-tag">Categorie</span>
+                    <h2 id="modalProductTitle">Product Naam</h2>
+                    <p id="modalProductPrice" class="product-price">€ 0,00</p>
+                    <p id="modalProductDesc" class="detail-desc">Beschrijving van het product.</p>
+
+                    <!-- SPIRAAL FIDGET MAAT OPTIE IN MODAL -->
+                    <div id="modalSpiraalSizeWrapper" class="spiraal-modal-size-box">
+                        <label for="modalSpiraalSizeSelect" class="form-label-bold">📏 Kies de maat van de Spiraal Fidget:</label>
+                        <select id="modalSpiraalSizeSelect" class="select-modal">
+                            <option value="Groot">Groot (€ 2,50)</option>
+                            <option value="Middel">Middel (€ 1,50)</option>
+                            <option value="Klein">Klein (€ 0,50)</option>
+                        </select>
+                    </div>
+                    
+                    <!-- KLEUR KEUZE MET DIRECTE FILAMENT KEUZE -->
+                    <div class="form-group-margin">
+                        <label for="modalColorInput" class="form-label-bold">🎨 Kies kleur filament:</label>
+                        <select id="modalColorInput" class="select-modal" style="width: 100%; padding: 0.65rem 0.8rem; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; font-size: 0.95rem; background-color: var(--white); cursor: pointer;">
+                            <option value="Maakt niet uit (wij kiezen de best passende)">🎲 Maakt niet uit (wij kiezen de best passende)</option>
+                            <option value="Zwart">⚫ Zwart</option>
+                            <option value="Wit">⚪ Wit</option>
+                            <option value="Rood">🔴 Rood</option>
+                            <option value="Blauw">🔵 Blauw</option>
+                            <option value="Groen">🟢 Groen</option>
+                            <option value="Geel">🟡 Geel</option>
+                            <option value="Oranje">🟠 Oranje</option>
+                            <option value="Grijs">🔘 Grijs</option>
+                            <option value="Anders" id="modalColorCustomOption">💬 Anders (zelf invullen...)</option>
+                        </select>
+                        
+                        <input type="text" id="modalColorCustomInput" placeholder="Typ hier je gewenste kleur (bijv. Roze, Paars, etc.)..." style="display: none; margin-top: 0.5rem; width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; font-size: 0.92rem; background-color: #f8fafc;">
+
+                        <small class="small-info" style="display: block; margin-top: 0.5rem; line-height: 1.4; color: #64748b;">
+                            ℹ️ <strong>Levertijd tip:</strong> Hebben we een specifieke kleur niet direct op voorraad? Dan kan de levertijd iets langer zijn. Kies je <em>"Maakt niet uit"</em>, dan kiezen wij direct de mooiste passende kleur uit onze voorraad en is je bestelling het snelst klaar!
+                        </small>
+                    </div>
+
+                    <div class="modal-action-btns">
+                        <button id="modalAddToCartBtn" class="btn btn-cart bg-cart">🛒 In winkelwagen</button>
+                        <button id="modalShareBtn" class="btn btn-share">📲 Deel product via WhatsApp</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- KEUZE MENU NA TOEVOEGEN AAN WINKELWAGEN -->
+    <div id="cartChoiceModal" class="cart-modal">
+        <div class="cart-modal-content max-w-420 text-center">
+            <span class="close-modal" id="closeCartChoiceModal">&times;</span>
+            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🛒</div>
+            <h2 style="font-size: 1.3rem; margin-bottom: 0.5rem;">Toegevoegd aan winkelwagen!</h2>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Wat wil je nu doen?</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                <button id="goToCartBtn" class="btn btn-primary full-width-btn bg-blue">
+                    🛒 Naar winkelwagen
+                </button>
+                <button id="continueShoppingBtn" class="btn btn-secondary-filled full-width-btn">
+                    🛍️ Verder winkelen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WINKELWAGEN MODAL -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close-modal" id="closeCart">&times;</span>
+            <h2>🛒 Jouw Winkelwagen & Bestelling</h2>
+            
+            <div class="cart-items-section">
+                <h3>Gekozen producten:</h3>
+                <div id="cartItemsList" class="cart-items-list">
+                    <p class="empty-cart-msg">Je winkelwagen is nog leeg.</p>
+                </div>
+            </div>
+            
+            <!-- AUTOMATISCHE VERZENDKOSTEN -->
+            <div class="delivery-options-box" style="background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin: 1.2rem 0;">
+                <label style="font-weight: 700; font-size: 0.92rem; display: block; margin-bottom: 0.6rem; color: var(--text-main);">
+                    🚚 Verzendkosten:
+                </label>
+                <p style="margin:0; font-size:.88rem; color:#475569;">De kosten worden automatisch berekend met je postcode en woonplaats. Gemeente Velsen is gratis; buiten Velsen betaal je € 4,00.</p>
+                <div id="shippingStatusNotice" style="display: block; margin-top: 0.85rem; padding: 0.7rem 0.9rem; border-radius: 6px; font-size: 0.86rem; line-height: 1.45;"></div>
+            </div>
+
+            <div class="cart-total-section" style="border-top: 1px solid var(--border); padding-top: 1rem; margin-bottom: 1.2rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.4rem; font-size: 0.95rem; color: #475569;">
+                    <span>Subtotaal artikelen:</span>
+                    <span id="cartSubtotalDisplay">€ 0,00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.6rem; font-size: 0.95rem; color: #475569;">
+                    <span>Verzendkosten:</span>
+                    <span id="cartShippingDisplay" style="font-weight: 700; color: var(--text-main);">€ 4,00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 1.15rem; font-weight: 800; color: var(--text-main); border-top: 1px dashed var(--border); padding-top: 0.6rem;">
+                    <span>Totaal te betalen:</span>
+                    <strong id="cartTotalPrice" style="color: var(--primary);">€ 0,00</strong>
+                </div>
+            </div>
+
+            <div class="checkout-form" style="border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 1.5rem;">
+                <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 1.2rem; color: var(--text-main);">
+                    📋 Jouw Gegevens
+                </h3>
+                
+                <div class="form-group" style="margin-bottom: 1.1rem;">
+                    <label for="klantNaam" style="display: block; font-weight: 600; font-size: 0.88rem; margin-bottom: 0.35rem; color: #475569;">
+                        Volledige naam: *
+                    </label>
+                    <input type="text" id="klantNaam" placeholder="Bijv. Jan de Vries" maxlength="80" required style="width: 100%; padding: 0.7rem 0.85rem; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.95rem; background: var(--white);">
+                    <!-- Verborgen velden voor script-compatibiliteit -->
+                    <input type="hidden" id="voornaam">
+                    <input type="hidden" id="achternaam">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.1rem;">
+                    <label for="email" style="display: block; font-weight: 600; font-size: 0.88rem; margin-bottom: 0.35rem; color: #475569;">
+                        E-mailadres: *
+                    </label>
+                    <input type="email" id="email" placeholder="jouw@email.nl" required style="width: 100%; padding: 0.7rem 0.85rem; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.95rem; background: var(--white);">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.1rem;">
+                    <label for="straatHuisnummer" style="display: block; font-weight: 600; font-size: 0.88rem; margin-bottom: 0.35rem; color: #475569;">
+                        Straatnaam + huisnummer: *
+                    </label>
+                    <input type="text" id="straatHuisnummer" placeholder="Bijv. Dorpsstraat 1" maxlength="100" required style="width: 100%; padding: 0.7rem 0.85rem; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.95rem; background: var(--white);">
+                </div>
+
+                <!-- Postcode en Woonplaats strak naast elkaar -->
+                <div style="display: grid; grid-template-columns: 1fr 1.4fr; gap: 0.8rem; margin-bottom: 1.5rem;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="postcode" style="display: block; font-weight: 600; font-size: 0.88rem; margin-bottom: 0.35rem; color: #475569;">
+                            Postcode: *
+                        </label>
+                        <input type="text" id="postcode" placeholder="1111 AA" maxlength="7" required style="width: 100%; padding: 0.7rem 0.85rem; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.95rem; background: var(--white);">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="plaats" style="display: block; font-weight: 600; font-size: 0.88rem; margin-bottom: 0.35rem; color: #475569;">
+                            Woonplaats: *
+                        </label>
+                        <input type="text" id="plaats" placeholder="Bijv. IJmuiden of Amsterdam" maxlength="70" required style="width: 100%; padding: 0.7rem 0.85rem; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 0.95rem; background: var(--white);">
+                    </div>
+                </div>
+                <p style="margin:-1rem 0 1rem; font-size:.78rem; color:#64748b;">We controleren het adres bij de Nederlandse adresgegevens van PDOK.</p>
+            </div>
+
+            <!-- Knoppen met fijne ruimte en professionele styling -->
+            <div class="cart-checkout-btns" style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 1rem; padding-top: 0.5rem;">
+                <button id="checkoutEmailBtn" class="btn btn-outline full-width-btn" style="font-size: 0.88rem; padding: 0.75rem 1rem; border-radius: 8px; cursor: pointer; color: #475569; border-color: var(--border);">
+                    ✉️ Verstuur via E-mail naar printify3dbedrijf@gmail.com
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL EMAIL KEUZE -->
+    <div id="emailChooserModal" class="cart-modal">
+        <div class="cart-modal-content max-w-420 text-center" style="padding: 2.2rem 1.8rem;">
+            <span class="close-modal" id="closeEmailChooserModal">&times;</span>
+            <h2 style="font-size: 1.35rem; margin-bottom: 0.5rem;">✉️ Kies je e-mailprogramma</h2>
+            <p class="chooser-sub" style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.4rem;">De bestelling wordt automatisch geadresseerd aan <strong>printify3dbedrijf@gmail.com</strong>.</p>
+            
+            <div class="chooser-btns" style="display: flex; flex-direction: column; gap: 0.85rem;">
+                <button id="sendViaAppBtn" class="btn btn-primary full-width-btn bg-blue" style="padding: 0.85rem 1rem; font-size: 0.95rem; border-radius: 8px; font-weight: 600;">
+                    📱 Standaard Mail-app (Apple Mail / Systeem)
+                </button>
+                <button id="sendViaGmailBtn" class="btn btn-primary full-width-btn bg-red" style="padding: 0.85rem 1rem; font-size: 0.95rem; border-radius: 8px; font-weight: 600;">
+                    🌐 Gmail (in browser)
+                </button>
+            </div>
+            
+            <div id="emailSentNotification" style="display: none; margin-top: 1.2rem; padding: 0.9rem; background: #e0f2fe; color: #0369a1; border-radius: 8px; font-size: 0.88rem; text-align: left; line-height: 1.4; border: 1px solid #bae6fd;">
+                ℹ️ <strong>Je e-mailprogramma is geopend!</strong> Controleer de gegevens en klik in je mail-app op <em>"Verzenden"</em> om je bestelling definitief te versturen naar <strong>printify3dbedrijf@gmail.com</strong>.
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL BESTELLING SUCCESVOL (BEDANKT) -->
+    <div id="orderSuccessModal" class="cart-modal">
+        <div class="cart-modal-content max-w-420 text-center" style="padding: 2.2rem 1.8rem;">
+            <span class="close-modal" id="closeSuccessModal">&times;</span>
+            <div style="width: 65px; height: 65px; background: #dcfce7; color: #16a34a; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; margin: 0 auto 1.2rem auto; font-weight: bold; border: 2px solid #86efac;">✓</div>
+            <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--text-main);">Bedankt voor je bestelling!</h2>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.1rem; line-height: 1.5;">
+                We hebben je bestelling direct verwerkt en verzonden naar <strong>printify3dbedrijf@gmail.com</strong>!
+            </p>
+
+            <div style="background: #e0f2fe; border: 1px solid #bae6fd; border-radius: 8px; padding: 0.85rem; margin-bottom: 1.2rem; text-align: left; font-size: 0.85rem; color: #0369a1; line-height: 1.4;">
+                ⏳ <strong>Let op:</strong> Het kan <strong>1 tot 2 minuten</strong> duren voordat de e-mail arriveert in de mailbox van Printify 3D. Geen zorgen, je bestelling is veilig verzonden!
+            </div>
+            
+            <div style="background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; text-align: left; font-size: 0.85rem;">
+                <strong>📦 Wat gebeurt er nu?</strong>
+                <ol style="margin: 0.5rem 0 0 1.2rem; padding: 0; color: #475569; line-height: 1.6;">
+                    <li>Wij checken je bestelde 3D-prints.</li>
+                    <li>Je ontvangt een berichtje met betaalverzoek (Tikkie).</li>
+                    <li>Zodra betaald, starten we direct de 3D-printers!</li>
+                </ol>
+            </div>
+            
+            <button id="finishOrderSuccessBtn" class="btn btn-primary full-width-btn bg-blue">🛍️ Terug naar de webshop</button>
+        </div>
+    </div>
+
+    <!-- FULLSCREEN MEDIA OVERLAY (Foto & Video) -->
+    <div id="fullscreenOverlay" class="fullscreen-overlay">
+        <div class="fullscreen-content">
+            <span id="closeFullscreen" class="close-fullscreen">&times;</span>
+            <img id="fullscreenImg" src="" alt="Volledig scherm foto" style="display:none;">
+            <video id="fullscreenVideo" controls playsinline webkit-playsinline style="display:none;"></video>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Printify 3D - Van idee naar 3D. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="reviews.js"></script>
+    <script>
+        (function() {
+            function escapeHtml(str) {
+                if (!str) return '';
+                return String(str).replace(/[&<>"']/g, function(m) {
+                    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[m];
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                // --- BESTELLEN LOGICA ---
+                const checkoutEmailBtn = document.getElementById('checkoutEmailBtn');
+                const successModal = document.getElementById('orderSuccessModal');
+                const closeSuccessBtn = document.getElementById('closeSuccessModal');
+                const finishSuccessBtn = document.getElementById('finishOrderSuccessBtn');
+                const emailModal = document.getElementById('emailChooserModal');
+                const closeEmailModalBtn = document.getElementById('closeEmailChooserModal');
+                const sendViaAppBtn = document.getElementById('sendViaAppBtn');
+                const sendViaGmailBtn = document.getElementById('sendViaGmailBtn');
+
+                // Modal vensters betrouwbaar openen en sluiten
+                function openSuccess() {
+                    if (successModal) {
+                        successModal.style.display = 'flex';
+                        successModal.classList.add('active');
+                    }
+                }
+                function closeSuccess() {
+                    if (successModal) {
+                        successModal.style.display = 'none';
+                        successModal.classList.remove('active');
+                    }
+                }
+                function openEmailModal() {
+                    if (emailModal) {
+                        emailModal.style.display = 'flex';
+                        emailModal.classList.add('active');
+                    }
+                }
+                function closeEmailModal() {
+                    if (emailModal) {
+                        emailModal.style.display = 'none';
+                        emailModal.classList.remove('active');
+                    }
+                }
+
+                if (closeSuccessBtn) closeSuccessBtn.addEventListener('click', closeSuccess);
+                if (finishSuccessBtn) finishSuccessBtn.addEventListener('click', closeSuccess);
+                if (closeEmailModalBtn) closeEmailModalBtn.addEventListener('click', closeEmailModal);
+                
+                if (successModal) {
+                    successModal.addEventListener('click', (e) => {
+                        if (e.target === successModal) closeSuccess();
+                    });
+                }
+                if (emailModal) {
+                    emailModal.addEventListener('click', (e) => {
+                        if (e.target === emailModal) closeEmailModal();
+                    });
+                }
+
+                // Synchroniseer volledige naam naar verborgen velden
+                const klantNaamInput = document.getElementById('klantNaam');
+                if (klantNaamInput) {
+                    klantNaamInput.addEventListener('input', () => {
+                        const parts = klantNaamInput.value.trim().split(' ');
+                        const v = document.getElementById('voornaam');
+                        const a = document.getElementById('achternaam');
+                        if (v) v.value = parts[0] || '';
+                        if (a) a.value = parts.slice(1).join(' ') || '';
+                    });
+                }
+
+                // --- VERZENDKOSTEN & BEREKENING LOGICA ---
+                const subtotalDisplay = document.getElementById('cartSubtotalDisplay');
+                const shippingDisplay = document.getElementById('cartShippingDisplay');
+                const totalPriceDisplay = document.getElementById('cartTotalPrice');
+                const plaatsInput = document.getElementById('plaats');
+                const postcodeInput = document.getElementById('postcode');
+
+                function isVelsenMunicipality(plaats, postcode) {
+                    const p = (plaats || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z]/g, '');
+                    const pc = (postcode || '').toUpperCase().replace(/\s+/g, '');
+                    const velsenPlaces = new Set([
+                        'velsen', 'velserbroek', 'velsenbroek', 'ijmuiden', 'ymuiden',
+                        'driehuis', 'santpoort', 'santpoortnoord', 'santpoortzuid',
+                        'velsenzuid', 'velsennoord', 'velsendorp'
+                    ]);
+                    const velsenPostcodes = ['1951', '1971', '1972', '1973', '1974', '1975', '1976', '1981', '1985', '1991', '1992', '2071', '2082'];
+                    const placeMatch = velsenPlaces.has(p);
+                    const postcodeMatch = /^\d{4}[A-Z]{2}$/.test(pc) && velsenPostcodes.some(code => pc.startsWith(code));
+
+                    // Controleer beide gegevens als ze zijn ingevuld, zodat een stad en postcode niet los van elkaar gratis maken.
+                    if (plaats && postcode) return placeMatch && postcodeMatch;
+                    return Boolean(plaats && placeMatch && !postcode) || Boolean(postcode && postcodeMatch && !plaats);
+                }
+
+                function calculateSubtotalAmount() {
+                    // 1. Probeer eerst vanuit een eventuele globale cart array in memory
+                    const currentCart = (window.cart && Array.isArray(window.cart)) ? window.cart : ((typeof cart !== 'undefined' && Array.isArray(cart)) ? cart : null);
+                    if (currentCart && currentCart.length > 0) {
+                        let sum = 0;
+                        currentCart.forEach(it => {
+                            const p = parseFloat(it.price || it.prijs || 0);
+                            const q = parseInt(it.quantity || it.qty || it.count || it.aantal || 1, 10);
+                            if (p > 0) sum += p * q;
+                        });
+                        if (sum > 0) return Math.round(sum * 100) / 100;
+                    }
+
+                    // 2. Parse direct en nauwkeurig uit de DOM (.cart-item elementen)
+                    const cartList = document.getElementById('cartItemsList');
+                    if (!cartList || cartList.querySelector('.empty-cart-msg')) return 0;
+
+                    let subtotal = 0;
+                    const items = cartList.querySelectorAll('.cart-item');
+                    if (items.length > 0) {
+                        items.forEach(item => {
+                            // Haal quantity op uit controls (de cijfers tussen - en +)
+                            let qty = 1;
+                            const controls = item.querySelector('.cart-item-controls');
+                            if (controls) {
+                                const digits = controls.innerText.replace(/[^0-9]/g, '');
+                                if (digits) {
+                                    const parsed = parseInt(digits, 10);
+                                    if (!isNaN(parsed) && parsed > 0) qty = parsed;
+                                }
+                            } else {
+                                const xMatch = item.innerText.match(/(\d+)\s*[x×]/i) || item.innerText.match(/[x×]\s*(\d+)/i);
+                                if (xMatch) qty = parseInt(xMatch[1], 10) || 1;
+                            }
+
+                            // Haal stukprijs op
+                            const priceMatch = item.innerText.match(/€\s*(\d+[.,]\d{2})/);
+                            if (priceMatch) {
+                                const displayedPrice = parseFloat(priceMatch[1].replace(',', '.'));
+                                const unitPrice = (item.dataset && item.dataset.price) ? parseFloat(String(item.dataset.price).replace(',', '.')) : displayedPrice;
+                                
+                                // Als de getoonde prijs de stukprijs is (of gelijk aan dataset prijs)
+                                if (Math.abs(displayedPrice - unitPrice) < 0.01) {
+                                    subtotal += unitPrice * qty;
+                                } else {
+                                    // De getoonde prijs is al berekend voor het aantal
+                                    subtotal += displayedPrice;
+                                }
+                            }
+                        });
+                    }
+
+                    // 3. Fallback als items anders gestructureerd zijn
+                    if (subtotal === 0) {
+                        const matches = [...cartList.innerText.matchAll(/€\s*(\d+[.,]\d{2})/g)];
+                        matches.forEach(m => {
+                            subtotal += parseFloat(m[1].replace(',', '.'));
+                        });
+                    }
+
+                    return Math.round(subtotal * 100) / 100;
+                }
+
+                const shippingStatusNotice = document.getElementById('shippingStatusNotice');
+
+                function updateShippingNotice(status, text) {
+                    if (!shippingStatusNotice) return;
+                    if (!text) {
+                        shippingStatusNotice.style.display = 'none';
+                        shippingStatusNotice.innerHTML = '';
+                        return;
+                    }
+                    shippingStatusNotice.style.display = 'block';
+                    if (status === 'success') {
+                        shippingStatusNotice.style.background = '#dcfce7';
+                        shippingStatusNotice.style.color = '#15803d';
+                        shippingStatusNotice.style.border = '1px solid #86efac';
+                    } else if (status === 'warning') {
+                        shippingStatusNotice.style.background = '#fef3c7';
+                        shippingStatusNotice.style.color = '#92400e';
+                        shippingStatusNotice.style.border = '1px solid #fcd34d';
+                    } else if (status === 'error') {
+                        shippingStatusNotice.style.background = '#fee2e2';
+                        shippingStatusNotice.style.color = '#b91c1c';
+                        shippingStatusNotice.style.border = '1px solid #fca5a5';
+                    } else {
+                        shippingStatusNotice.style.background = '#e0f2fe';
+                        shippingStatusNotice.style.color = '#0369a1';
+                        shippingStatusNotice.style.border = '1px solid #bae6fd';
+                    }
+                    shippingStatusNotice.innerHTML = text;
+                }
+
+                function validateShippingWithLocation() {
+                    const plaats = (plaatsInput?.value || '').trim();
+                    const postcode = (postcodeInput?.value || '').trim();
+                    if (plaats && postcode && isVelsenMunicipality(plaats, postcode)) {
+                        updateShippingNotice('success', '✓ Gratis bezorging in gemeente Velsen.');
+                    } else if (plaats && postcode) {
+                        updateShippingNotice('warning', `Pakketpost buiten gemeente Velsen: € 4,00.`);
+                    } else {
+                        updateShippingNotice('info', 'Vul je postcode en woonplaats in. Binnen gemeente Velsen is bezorging gratis; daarbuiten betaal je € 4,00.');
+                    }
+                    updatePricingDisplays();
+                }
+
+                function updatePricingDisplays() {
+                    const subtotal = calculateSubtotalAmount();
+                    const plaats = (plaatsInput?.value || '').trim();
+                    const postcode = (postcodeInput?.value || '').trim();
+                    const hasCartItems = (window.cart && window.cart.length > 0) || Boolean(document.querySelector('#cartItemsList .cart-item'));
+
+                    const isFree = Boolean(plaats && postcode && isVelsenMunicipality(plaats, postcode));
+
+                    const shipping = (subtotal > 0 || hasCartItems) ? (isFree ? 0 : 4.00) : 0;
+                    const total = subtotal + shipping;
+
+                    if (subtotalDisplay) subtotalDisplay.textContent = '€ ' + subtotal.toFixed(2).replace('.', ',');
+                    if (shippingDisplay) {
+                        if (subtotal === 0) {
+                            shippingDisplay.textContent = '€ 0,00';
+                            shippingDisplay.style.color = '#64748b';
+                        } else if (isFree) {
+                            shippingDisplay.textContent = 'Gratis (€ 0,00)';
+                            shippingDisplay.style.color = '#16a34a';
+                        } else {
+                            shippingDisplay.textContent = '€ 4,00';
+                            shippingDisplay.style.color = 'var(--text-main)';
+                        }
+                    }
+                    if (totalPriceDisplay) {
+                        totalPriceDisplay.textContent = '€ ' + total.toFixed(2).replace('.', ',');
+                    }
+                }
+
+                if (plaatsInput) {
+                    plaatsInput.addEventListener('input', () => {
+                        validateShippingWithLocation();
+                    });
+                }
+                if (postcodeInput) {
+                    postcodeInput.addEventListener('input', () => {
+                        validateShippingWithLocation();
+                    });
+                }
+                validateShippingWithLocation();
+
+                const cartListObserver = document.getElementById('cartItemsList');
+                if (cartListObserver) {
+                    const observer = new MutationObserver(() => {
+                        updatePricingDisplays();
+                    });
+                    observer.observe(cartListObserver, { childList: true, subtree: true, characterData: true });
+                }
+
+                document.querySelectorAll('a[href="#cartModal"], #cartBtn, .cart-nav-link').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        setTimeout(updatePricingDisplays, 100);
+                    });
+                });
+
+                function getOrderData() {
+                    const klantNaam = document.getElementById('klantNaam')?.value.trim() || document.getElementById('voornaam')?.value.trim() || '';
+                    const email = document.getElementById('email')?.value.trim() || '';
+                    const straat = document.getElementById('straatHuisnummer')?.value.trim() || '';
+                    const postcode = document.getElementById('postcode')?.value.trim() || '';
+                    const plaats = document.getElementById('plaats')?.value.trim() || '';
+
+                    const cartItemsList = document.getElementById('cartItemsList');
+                    const emptyMsg = cartItemsList?.querySelector('.empty-cart-msg');
+                    if (!cartItemsList || emptyMsg || cartItemsList.children.length === 0) {
+                        return null;
+                    }
+
+                    const subtotal = calculateSubtotalAmount();
+                    const isFree = Boolean(plaats && postcode && isVelsenMunicipality(plaats, postcode));
+                    const hasCartItems = (window.cart && window.cart.length > 0) || Boolean(cartItemsList.querySelector('.cart-item'));
+                    const shippingCost = (subtotal > 0 || hasCartItems) ? (isFree ? 0 : 4.00) : 0;
+                    const total = subtotal + shippingCost;
+                    const formattedTotal = '€ ' + total.toFixed(2).replace('.', ',');
+                    const formattedSubtotal = '€ ' + subtotal.toFixed(2).replace('.', ',');
+                    const shippingText = isFree ? 'Gemeente Velsen: gratis bezorging (€ 0,00)' : 'Verzendkosten buiten gemeente Velsen (+ € 4,00)';
+
+                    const itemElements = cartItemsList.querySelectorAll('.cart-item');
+                    let itemsDescription = [];
+                    const currentCart = (window.cart && Array.isArray(window.cart) && window.cart.length > 0) ? window.cart : null;
+                    if (currentCart) {
+                        currentCart.forEach(it => {
+                            const customDetails = it.type === 'custom-design' ? ` (Kleur: ${it.color || 'niet opgegeven'}; ontwerplink: ${it.designUrl}; gewicht en prijs worden door Printify bepaald)` : '';
+                            const line = it.type === 'custom-design'
+                                ? `${it.quantity}x ${it.name}${customDetails} - prijs volgt na controle`
+                                : `${it.quantity}x ${it.name}${it.color ? ' (Kleur: ' + it.color + ')' : ''} - € ${(it.price * it.quantity).toFixed(2).replace('.', ',')}`;
+                            itemsDescription.push(line);
+                        });
+                    } else if (itemElements.length > 0) {
+                        itemElements.forEach(item => {
+                            itemsDescription.push(item.innerText.replace(/\s+/g, ' ').replace('×', '').trim());
+                        });
+                    } else {
+                        itemsDescription.push(cartItemsList.innerText.replace(/\s+/g, ' ').trim());
+                    }
+
+                    return {
+                        klantNaam,
+                        email,
+                        straat,
+                        postcode,
+                        plaats,
+                        subtotal: formattedSubtotal,
+                        shippingText,
+                        totalPrice: formattedTotal,
+                        itemsDescription,
+                        adres: [straat, postcode, plaats].filter(Boolean).join(', ') || 'Niet opgegeven'
+                    };
+                }
+
+                let addressCheckInProgress = false;
+
+                async function validateOrderForSubmission() {
+                    const data = getOrderData();
+                    if (!data) {
+                        alert('Je winkelwagen is nog leeg! Voeg eerst een product toe.');
+                        return null;
+                    }
+
+                    const nameInput = document.getElementById('klantNaam');
+                    const emailInput = document.getElementById('email');
+                    const streetInput = document.getElementById('straatHuisnummer');
+                    const postcodeInputForCheck = document.getElementById('postcode');
+                    const placeInputForCheck = document.getElementById('plaats');
+                    const namePattern = /^[\p{L}\p{M}][\p{L}\p{M} .’'-]{1,79}$/u;
+                    const placePattern = /^[\p{L}\p{M}]+(?:[ .'-][\p{L}\p{M}]+)*$/u;
+                    const streetPattern = /^(?=.{4,100}$)(?=.*\p{L})[\p{L}\p{M}0-9 .,'’/-]+$/u;
+                    const houseNumberPattern = /(?:^|\s)\d{1,5}(?:\s*[a-z])?(?:[-/]\s*[a-z0-9-]+)?$/iu;
+                    const postcodePattern = /^\d{4}\s?[a-z]{2}$/i;
+
+                    if (!namePattern.test(data.klantNaam)) {
+                        alert('Vul een geldige naam in. Gebruik alleen letters, spaties, apostrofs, punten of streepjes.');
+                        nameInput?.focus();
+                        return null;
+                    }
+                    if (!emailInput?.checkValidity() || !data.email) {
+                        alert('Vul een geldig e-mailadres in.');
+                        emailInput?.focus();
+                        return null;
+                    }
+                    if (!streetPattern.test(data.straat) || !houseNumberPattern.test(data.straat)) {
+                        alert('Vul een bestaande straatnaam met huisnummer in, bijvoorbeeld: Dorpsstraat 1.');
+                        streetInput?.focus();
+                        return null;
+                    }
+                    if (!postcodePattern.test(data.postcode)) {
+                        alert('Vul een Nederlandse postcode in met vier cijfers en twee letters, bijvoorbeeld 1971 AA.');
+                        postcodeInputForCheck?.focus();
+                        return null;
+                    }
+                    if (!placePattern.test(data.plaats)) {
+                        alert('Vul een geldige woonplaats in met alleen letters, spaties of een streepje.');
+                        placeInputForCheck?.focus();
+                        return null;
+                    }
+                    if (addressCheckInProgress) return null;
+
+                    addressCheckInProgress = true;
+                    try {
+                        const normalizeAddressPart = value => String(value || '')
+                            .normalize('NFD')
+                            .replace(/[\u0300-\u036f]/g, '')
+                            .toLowerCase()
+                            .replace(/[^a-z0-9]/g, '');
+                        const postcode = data.postcode.toUpperCase().replace(/\s+/g, '');
+                        const place = normalizeAddressPart(data.plaats);
+                        const street = normalizeAddressPart(data.straat);
+                        const lookupUrl = new URL('https://api.pdok.nl/bzk/locatieserver/search/v3_1/free');
+                        lookupUrl.searchParams.set('q', `${data.straat}, ${data.postcode}, ${data.plaats}`);
+                        lookupUrl.searchParams.set('fq', 'type:adres');
+                        lookupUrl.searchParams.set('rows', '10');
+                        lookupUrl.searchParams.set('fl', 'type,postcode,woonplaatsnaam,weergavenaam');
+
+                        const response = await fetch(lookupUrl.toString(), { headers: { Accept: 'application/json' } });
+                        if (!response.ok) throw new Error('Adrescontrole niet beschikbaar.');
+                        const result = await response.json();
+                        const docs = result?.response?.docs || [];
+                        const addressExistsInNetherlands = docs.some(doc => {
+                            const docPostcode = String(doc.postcode || '').toUpperCase().replace(/\s+/g, '');
+                            const docPlace = normalizeAddressPart(doc.woonplaatsnaam);
+                            const docAddress = normalizeAddressPart(doc.weergavenaam);
+                            const placeMatches = docPlace === place || (place === 'velsen' && docPlace.startsWith('velsen'));
+                            return doc.type === 'adres'
+                                && docPostcode === postcode
+                                && placeMatches
+                                && docAddress.includes(street);
+                        });
+
+                        if (!addressExistsInNetherlands) {
+                            alert('We konden dit adres niet vinden in de Nederlandse adresgegevens. We bezorgen alleen op bestaande adressen in Nederland. Controleer straat, huisnummer, postcode en woonplaats.');
+                            streetInput?.focus();
+                            return null;
+                        }
+                        return data;
+                    } catch (error) {
+                        alert('De adrescontrole werkt tijdelijk niet. Je bestelling is niet verstuurd. Probeer het straks opnieuw.');
+                        return null;
+                    } finally {
+                        addressCheckInProgress = false;
+                    }
+                }
+
+                function completeOrderFlow() {
+                    const cartModal = document.getElementById('cartModal');
+                    if (cartModal) cartModal.classList.remove('active');
+                    if (emailModal) emailModal.classList.remove('active');
+
+                    const cartItemsList = document.getElementById('cartItemsList');
+                    if (cartItemsList) {
+                        cartItemsList.innerHTML = '<p class="empty-cart-msg">Je winkelwagen is nog leeg.</p>';
+                    }
+                    const priceElem = document.getElementById('cartTotalPrice');
+                    if (priceElem) priceElem.textContent = '€ 0,00';
+                    if (subtotalDisplay) subtotalDisplay.textContent = '€ 0,00';
+
+                    const c1 = document.getElementById('cartCount');
+                    if (c1) c1.textContent = '0';
+                    const c2 = document.getElementById('cartCountMobile');
+                    if (c2) c2.textContent = '0';
+
+                    try {
+                        localStorage.removeItem('cart');
+                        localStorage.removeItem('printify_cart');
+                        if (window.cart && Array.isArray(window.cart)) window.cart = [];
+                    } catch (e) {}
+
+                    ['klantNaam', 'voornaam', 'achternaam', 'email', 'straatHuisnummer', 'postcode', 'plaats'].forEach(id => {
+                        const el = document.getElementById(id);
+                        if (el) el.value = '';
+                    });
+
+                    if (successModal) successModal.classList.add('active');
+                }
+
+                // Bestelling versturen via het e-mailprogramma.
+                if (checkoutEmailBtn) {
+                    checkoutEmailBtn.addEventListener('click', async (e) => {
+                        e.preventDefault();
+                        const originalEmailButtonHtml = checkoutEmailBtn.innerHTML;
+                        checkoutEmailBtn.disabled = true;
+                        checkoutEmailBtn.textContent = '⏳ Adres controleren…';
+                        const data = await validateOrderForSubmission();
+                        checkoutEmailBtn.disabled = false;
+                        checkoutEmailBtn.innerHTML = originalEmailButtonHtml;
+                        if (!data) {
+                            return;
+                        }
+
+                        const notif = document.getElementById('emailSentNotification');
+                        if (notif) notif.style.display = 'none';
+
+                        if (emailModal) emailModal.classList.add('active');
+                    });
+                }
+
+                // E-mail versturen via standaard mail-app of Gmail
+                function triggerEmailClient(isGmail) {
+                    const data = getOrderData();
+                    if (!data) return;
+
+                    const targetEmail = 'printify3dbedrijf@gmail.com';
+                    const subject = `Nieuwe 3D-Print Bestelling - ${data.klantNaam}`;
+                    const body = `Hallo Printify 3D,\n\nIk wil graag de volgende bestelling plaatsen:\n\n📦 BESTELDE ARTIKELEN:\n${data.itemsDescription.join('\n')}\n\nSubtotaal: ${data.subtotal}\nBezorgoptie: ${data.shippingText}\n💰 TOTAALBEDRAG: ${data.totalPrice}\n\n👤 MIJN GEGEVENS:\nNaam: ${data.klantNaam}\nE-mail: ${data.email}\nAdres: ${data.adres}\n\nGraag ontvang ik het betaalverzoek. Alvast bedankt!`;
+
+                    if (isGmail) {
+                        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(targetEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                        window.open(gmailUrl, '_blank');
+                    } else {
+                        const mailtoUrl = `mailto:${encodeURIComponent(targetEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                        window.location.href = mailtoUrl;
+                    }
+
+                    // Toon een duidelijke melding in de pop-up, maar NIET het valse 'Bedankt voor je bestelling' succes-scherm!
+                    const notif = document.getElementById('emailSentNotification');
+                    if (notif) notif.style.display = 'block';
+                }
+
+                if (sendViaAppBtn) {
+                    sendViaAppBtn.addEventListener('click', () => triggerEmailClient(false));
+                }
+                if (sendViaGmailBtn) {
+                    sendViaGmailBtn.addEventListener('click', () => triggerEmailClient(true));
+                }
+
+                // --- KLEUR KEUZE 'ANDERS' LOGICA ---
+                const colorSelect = document.getElementById('modalColorInput');
+                const customColorInput = document.getElementById('modalColorCustomInput');
+                const customOption = document.getElementById('modalColorCustomOption');
+
+                if (colorSelect && customColorInput) {
+                    colorSelect.addEventListener('change', () => {
+                        if (colorSelect.value.startsWith('Anders')) {
+                            customColorInput.style.display = 'block';
+                            customColorInput.focus();
+                            if (customColorInput.value.trim() && customOption) {
+                                customOption.value = 'Anders: ' + customColorInput.value.trim();
+                                colorSelect.value = customOption.value;
+                            }
+                        } else {
+                            customColorInput.style.display = 'none';
+                            if (customOption) customOption.value = 'Anders';
+                        }
+                    });
+
+                    customColorInput.addEventListener('input', () => {
+                        const val = customColorInput.value.trim();
+                        if (customOption) {
+                            customOption.value = val ? ('Anders: ' + val) : 'Anders';
+                            colorSelect.value = customOption.value;
+                        }
+                    });
+
+                    // Reset naar 'Maakt niet uit' zodra een product geopend wordt
+                    document.querySelectorAll('.product-card').forEach(card => {
+                        card.addEventListener('click', () => {
+                            colorSelect.selectedIndex = 0;
+                            customColorInput.style.display = 'none';
+                            customColorInput.value = '';
+                            if (customOption) customOption.value = 'Anders';
+                        });
+                    });
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
